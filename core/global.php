@@ -47,7 +47,7 @@ $conn->close();
 		echo "<div class='panel panel-primary'><div class='panel-heading'><h3 class='panel-title'>Last 5 added servers</h3></div><div class='panel-body'>";
 		echo "<table class='table'><tr><th>ID</th><th>Hostname</th><th>Owner</th><th>More Details</th></tr>";
 		require_once("core/dbconfig.php");
-$conn2 = new mysqli("localhost", "devolari_serverl", "kodeme0A", "devolari_serverlist");
+$conn2 = new mysqli("localhost", "user", "password", "dbname");
 if($serverList->dev_mode==1){
 if ($conn2->connect_error) {
     die("Connection failed: " . $conn2->connect_error);
